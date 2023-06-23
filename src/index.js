@@ -1,5 +1,4 @@
-import { Person } from './person.js'
-document.getElementById("form-id").addEventListener("submit", handleForm)
+// document.getElementById("form-id").addEventListener("submit", handleForm)
 
 function handleForm(event) {
     event.preventDefault();
@@ -8,7 +7,7 @@ function handleForm(event) {
     let earthAge = parseInt(document.getElementById("ageID").value);
     let pastAge = parseInt(document.getElementById("pastAgeID").value);
     let futureAge = parseInt(document.getElementById("futureAgeID").value);
-    let person = new Person(firstName.value, earthAge, pastAge, futureAge);
+    let person = new Person(firstName, earthAge, pastAge, futureAge);
     let planet = getSelectedPlanet();  
     
     let planetAge = person.calculateAge(planet);
@@ -36,7 +35,6 @@ function getSelectedPlanet() {
     }
     return null;
 }
-
 
 
 
