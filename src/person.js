@@ -42,7 +42,12 @@ export class Person {
         let yearsUntil;
         if (planet === "Mercury") {
             yearsUntil = ((this.futureAge - this.earthAge) / 0.24).toFixed(2);
-        } return parseFloat(yearsUntil);
+            return parseFloat(yearsUntil)
+        } else if (planet === "Venus") {
+            yearsUntil = ((this.futureAge - this.earthAge) / 0.62).toFixed(2);
+            return parseFloat(yearsUntil)
+        }
+        
     }
 }
 
