@@ -32,25 +32,25 @@ describe('Person  ', () => {
         expect(person.calculateAge("Jupiter")).toEqual(3.04);
     });
 
-    // test ('should determine how many years have passed on each planet since a past birthday', () => {
-    //     expect(person.calculateYearsPassed("Mercury")).toEqual(25);
-    // });
+    test ('should determine how many years have passed on each planet since a past birthday', () => {
+        expect(person.calculateYearsPassed("Mercury")).toEqual(25);
+    });
 
-    // test ('should determine how many years have passed on each planet since a past birthday', () => {
-    //     expect(person.calculateYearsPassed("Venus")).toEqual(9.68);
-    // });
+    test ('should determine how many years have passed on each planet since a past birthday', () => {
+        expect(person.calculateYearsPassed("Venus")).toEqual(9.68);
+    });
 
-    // test ('should determine how many years have passed on each planet since a past birthday', () => {
-    //     expect(person.calculateYearsPassed("Mars")).toEqual(3.19);
-    // });   
+    test ('should determine how many years have passed on each planet since a past birthday', () => {
+        expect(person.calculateYearsPassed("Mars")).toEqual(3.19);
+    });   
     
-    // test ('should determine how many years have passed on each planet since a past birthday', () => {
-    //     expect(person.calculateYearsPassed("Jupiter")).toEqual(0.51);
-    // });
+    test ('should determine how many years have passed on each planet since a past birthday', () => {
+        expect(person.calculateYearsPassed("Jupiter")).toEqual(0.51);
+    });
 
-    // test('should return an invalid response if an invalid planet is entered', () => {
-    //     expect(person.calculateYearsPassed("Pluto")).toBe("Invalid planet!");
-    // });
+    test('should return an invalid response if an invalid planet is entered', () => {
+        expect(person.calculateYearsPassed("Pluto")).toBe("Invalid planet!");
+    });
 
     // test ('should determine how many years have yet to pass until a future birthday', () => {
     //     expect(person.calculateYearsUntil("Mercury")).toEqual(58.33);
