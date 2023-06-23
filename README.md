@@ -1,29 +1,31 @@
-# (Application Name)
+# Super Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### An age calculator for different planets
 
 #### By Lindsay Warr
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* JavaScript
+* Jest
+* ESLint
+* webpack
+* npm
+* HTML
+* CSS
 
 ## Description
+This project was for week 5 at Epicodus to demonstrate proficiency in TDD and Environments in JavaScript. Link to gh-page here: https://iamalion.github.io/super-galactic-age-calc/
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Clone the GitHub repository
+* Open in VS Code
+* From the root directory, run _npm install_ in the terminal to load necessary plugins and dependencies
+* Run _npm run start_ in the terminal to 
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* None at this time
 
 ## License
