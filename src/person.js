@@ -35,8 +35,8 @@ export class Person {
             yearsPassed = ((this.earthAge - this.pastAge) * 11.86).toFixed(2);
             return parseFloat(yearsPassed);
         
-        } else {
-            return "Invalid planet!"
+        // } else {
+        //     return "Invalid planet!"
         }
             
     }

@@ -48,5 +48,9 @@ describe('Person  ', () => {
         expect(person.calculateYearsPassed("Jupiter")).toEqual(71.16)
     });
 
+    test('should return an invalid response if an invalid planet is entered', () => {
+        expect(person.calculateYearsPassed("Pluto")).toBe("Invalid planet!");
+    });
+
     
 })
