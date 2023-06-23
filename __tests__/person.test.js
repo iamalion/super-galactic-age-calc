@@ -7,8 +7,8 @@ describe('Person  ', () => {
       expect(person.firstName).toBe("Lindsay");
     });
 
-    // test('should calculate the age of the person in Mercury, Venus, Mars, and Jupiter years', () => {
-    //     const person = new Person ("Lindsay", 36);
-    //     expect(person.calculateAge()).toEqual(8.64)
-    // })
+    test('should calculate the age of the person in Mercury, Venus, Mars, and Jupiter years', () => {
+        const person = new Person ("Lindsay", 36);
+        expect(person.calculateAge()).toEqual(8.64)
+    })
 })
