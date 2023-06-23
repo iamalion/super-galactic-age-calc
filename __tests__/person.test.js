@@ -67,6 +67,10 @@ describe('Person  ', () => {
     test ('should determine how many years have yet to pass until a future birthday', () => {
         expect(person.calculateYearsUntil("Jupiter")).toEqual(1.18);
     });
+    
+    test('should return an invalid response if an invalid planet is entered', () => {
+        expect(person.calculateYearsUntil("Pluto")).toBe("Invalid planet!");
+    });
 
     
 
