@@ -13,7 +13,7 @@ describe('Person  ', () => {
     });
 
     test('should calculate the age of the person in Mercury, Venus, Mars, and Jupiter years', () => {
-        expect(person.calculateAge("Mercury")).toEqual(8.64)
+        expect(person.calculateAge("Mercury")).toEqual(150)
     });
 
     test('should return an invalid response if an invalid planet is entered', () => {
@@ -21,31 +21,31 @@ describe('Person  ', () => {
     });
 
     test('should calculate the age of the person in Mercury, Venus, Mars, and Jupiter years', () => {
-        expect(person.calculateAge("Venus")).toEqual(22.32)
+        expect(person.calculateAge("Venus")).toEqual(58.06)
     });
 
     test('should calculate the age of the person in Mercury, Venus, Mars, and Jupiter years', () => {
-        expect(person.calculateAge("Mars")).toEqual(67.68)
+        expect(person.calculateAge("Mars")).toEqual(19.15)
     });
 
     test('should calculate the age of the person in Mercury, Venus, Mars, and Jupiter years', () => {
-        expect(person.calculateAge("Jupiter")).toEqual(426.96)
+        expect(person.calculateAge("Jupiter")).toEqual(3.04)
     });
 
     test ('should determine how many years have passed on each planet since a past birthday', () => {
-        expect(person.calculateYearsPassed("Mercury")).toEqual(1.44)
+        expect(person.calculateYearsPassed("Mercury")).toEqual(25)
     });
 
     test ('should determine how many years have passed on each planet since a past birthday', () => {
-        expect(person.calculateYearsPassed("Venus")).toEqual(3.72)
+        expect(person.calculateYearsPassed("Venus")).toEqual(9.68)
     });
 
     test ('should determine how many years have passed on each planet since a past birthday', () => {
-        expect(person.calculateYearsPassed("Mars")).toEqual(11.28)
+        expect(person.calculateYearsPassed("Mars")).toEqual(3.19)
     });   
     
     test ('should determine how many years have passed on each planet since a past birthday', () => {
-        expect(person.calculateYearsPassed("Jupiter")).toEqual(71.16)
+        expect(person.calculateYearsPassed("Jupiter")).toEqual(0.51)
     });
 
     test('should return an invalid response if an invalid planet is entered', () => {
