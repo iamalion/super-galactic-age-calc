@@ -45,31 +45,38 @@
                 <input type="number" min="0" max="120" id="futureAgeID" class="form-control" required/>
             </div>
                 <p>Now, pick a planet!</p>
-                <input type="radio" name="planetList" value="mercuryVal" id="mercuryID" checked>
-                <label for="mercuryID">Mercury</label><br />
-                <input type="radio" name="planetList" value="venusVal" id="venusID">
-                <label for="venusID">Venus</label><br />
-                <input type="radio" name="planetList" value="marsVal" id="marsID">
-                <label for="marsID">Mars</label><br />
-                <input type="radio" name="planetList" value="jupiterVal" id="jupiterID">
-                <label for="jupiterID">Jupiter</label><br />
-                <input type="radio" name="planetList" value="uranusVal" id="uranusID">
-                <label for="uranusID">Uranus</label><br />
-                <input type="radio" name="planetList" value="neptuneVal" id="neptuneID">
-                <label for="neptuneID">Neptune</label><br />
+                <input type="radio" name="planetList" value="Mercury" id="Mercury" checked>
+                <label for="Mercury">Mercury</label><br />
+                <input type="radio" name="planetList" value="Venus" id="Venus">
+                <label for="Venus">Venus</label><br />
+                <input type="radio" name="planetList" value="Mars" id="Mars">
+                <label for="Mars">Mars</label><br />
+                <input type="radio" name="planetList" value="Jupiter" id="Jupiter">
+                <label for="Jupiter">Jupiter</label><br />
+                <input type="radio" name="planetList" value="Saturn" id="Saturn">
+                <label for="Saturn">Saturn</label><br />
+                <input type="radio" name="planetList" value="Uranus" id="Uranus">
+                <label for="Uranus">Uranus</label><br />
+                <input type="radio" name="planetList" value="Neptune" id="Neptune">
+                <label for="Neptune">Neptune</label><br />
             </div>    
             <button type="submit" id="buttonID">Zeep-zorp my age!</button>
         </form>
     </div>  
     <div id="result" class="hidden">
         <div id="centerResults">
-        <!-- <img src="" alt=""> -->
-        <div class="">
-            <h2 id="greetingID" class="resultStyle"></h2>
-            <p id="output"class=resultStyle></p>
+            <div class="">
+                <h2 id="greetingID"></h2>
+                <p id="ageMessage"></p>
+                <p id="passedMessage"></p>
+                <p id="untilMessage"></p>
+            </div>
         </div>
+    </div>
     
-        <button id="clearForm" class="float">Try a different planet!</button>
+        <!-- <button id="clearForm" class="float">Try a different planet!</button> -->
     </div> 
+    <script src="person.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -15,17 +15,21 @@
 * CSS
 
 ## Description
-This project was for week 5 at Epicodus to demonstrate proficiency in TDD and Environments in JavaScript. Link to gh-page here: https://iamalion.github.io/super-galactic-age-calc/
+This project was for week 5 at Epicodus to demonstrate proficiency in TDD and Environments in JavaScript. 
 
 ## Setup/Installation Requirements
 
 * Clone the GitHub repository
 * Open in VS Code
 * From the root directory, run _npm install_ in the terminal to load necessary plugins and dependencies
-* Run _npm run start_ in the terminal to 
+* Run _npm run start_ in the terminal
 
 ## Known Bugs
 
-* None at this time
+* UI Logic does not yet work
 
 ## License
+MIT License
+
+Copyright (c) June 2023 [Lindsay Warr Contact me at iamalion@gmail.com with any questions, comments, or suggestions
+
