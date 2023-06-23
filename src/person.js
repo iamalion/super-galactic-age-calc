@@ -10,7 +10,8 @@ export class Person {
             Mars: 1.88,
             Jupiter: 11.86,
             Saturn: 29.46,
-            Uranus: 84.02
+            Uranus: 84.02,
+            Neptune: 164.8
         };
     }
     calculateAge(planet){

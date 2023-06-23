@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1687556316527" clover="3.2.0">
-  <project timestamp="1687556316527" name="All files">
+<coverage generated="1687556357845" clover="3.2.0">
+  <project timestamp="1687556357845" name="All files">
     <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4" elements="29" coveredelements="29" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
     <file name="person.js" path="/Users/lindsay/Desktop/epicodus/super-galactic-age-calc/src/person.js">
       <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
@@ -9,20 +9,20 @@
       <line num="5" count="19" type="stmt"/>
       <line num="6" count="19" type="stmt"/>
       <line num="7" count="19" type="stmt"/>
-      <line num="18" count="8" type="cond" truecount="2" falsecount="0"/>
-      <line num="19" count="6" type="stmt"/>
-      <line num="20" count="6" type="stmt"/>
-      <line num="22" count="2" type="stmt"/>
-      <line num="29" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="30" count="4" type="stmt"/>
+      <line num="19" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="20" count="7" type="stmt"/>
+      <line num="21" count="7" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="30" count="5" type="cond" truecount="2" falsecount="0"/>
       <line num="31" count="4" type="stmt"/>
       <line num="32" count="4" type="stmt"/>
-      <line num="34" count="1" type="stmt"/>
-      <line num="40" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="41" count="4" type="stmt"/>
+      <line num="33" count="4" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="41" count="5" type="cond" truecount="2" falsecount="0"/>
       <line num="42" count="4" type="stmt"/>
       <line num="43" count="4" type="stmt"/>
-      <line num="45" count="1" type="stmt"/>
+      <line num="44" count="4" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
