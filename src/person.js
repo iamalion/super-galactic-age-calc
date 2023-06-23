@@ -7,14 +7,14 @@ export class Person {
     }
     calculateAge(planet){
         let planetAge;
-        if (planet === "Mercury"){
-            planetAge = (this.earthAge / 0.24).toFixed(2);
-        } else if (planet === "Venus") {
-            planetAge = (this.earthAge / 0.62).toFixed(2);
-        } else if (planet === "Mars"){
-            planetAge = (this.earthAge / 1.88).toFixed(2);
-        } else if (planet === "Jupiter"){
-            planetAge = (this.earthAge / 11.86).toFixed(2);
+        const planetYears = {
+            Mercury: 0.24,
+            Venus: 0.62,
+            Mars: 1.88,
+            Jupiter: 11.86,
+        }
+        if (planetYears.hasOwnProperty(planet)){
+            planetAge = (this.earthAge / planetYears[planet]).toFixed(2);
         } else {
             return "Invalid planet!"
         }
