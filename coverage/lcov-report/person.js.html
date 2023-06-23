@@ -24,7 +24,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>21/21</span>
+                <span class='fraction'>19/19</span>
             </div>
         
             
@@ -45,7 +45,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>21/21</span>
+                <span class='fraction'>19/19</span>
             </div>
         
             
@@ -102,21 +102,9 @@
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a>
-<a name='L47'></a><a href='#L47'>47</a>
-<a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a>
-<a name='L50'></a><a href='#L50'>50</a>
-<a name='L51'></a><a href='#L51'>51</a>
-<a name='L52'></a><a href='#L52'>52</a>
-<a name='L53'></a><a href='#L53'>53</a>
-<a name='L54'></a><a href='#L54'>54</a>
-<a name='L55'></a><a href='#L55'>55</a>
-<a name='L56'></a><a href='#L56'>56</a>
-<a name='L57'></a><a href='#L57'>57</a>
-<a name='L58'></a><a href='#L58'>58</a>
-<a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L47'></a><a href='#L47'>47</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16x</span>
 <span class="cline-any cline-yes">16x</span>
 <span class="cline-any cline-yes">16x</span>
 <span class="cline-any cline-yes">16x</span>
@@ -124,7 +112,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -142,24 +129,11 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -180,17 +154,17 @@
         this.earthAge = earthAge;
         this.pastAge = pastAge;
         this.futureAge = futureAge;
-    }
-    calculateAge(planet){
-        let planetAge;
-        const planetYears = {
+        this.planetYears = {
             Mercury: 0.24,
             Venus: 0.62,
             Mars: 1.88,
-            Jupiter: 11.86,
+            Jupiter: 11.86
         }
-        if (planetYears.hasOwnProperty(planet)){
-            planetAge = (this.earthAge / planetYears[planet]).toFixed(2);
+    }
+    calculateAge(planet){
+        let planetAge;
+        if (this.planetYears.hasOwnProperty(planet)){
+            planetAge = (this.earthAge / this.planetYears[planet]).toFixed(2);
             return parseFloat(planetAge)
         } else {
             return "Invalid planet!"
@@ -200,15 +174,9 @@
     
     calculateYearsPassed(planet) {
         let yearsPassed;
-        const planetYears = {
-            Mercury: 0.24,
-            Venus: 0.62,
-            Mars: 1.88,
-            Jupiter: 11.86,
-        }
-        if (planetYears.hasOwnProperty(planet)) {
+        if (this.planetYears.hasOwnProperty(planet)) {
             let ageDiff = this.earthAge - this.pastAge;
-            yearsPassed = (ageDiff / planetYears[planet]).toFixed(2);
+            yearsPassed = (ageDiff / this.planetYears[planet]).toFixed(2);
             return parseFloat(yearsPassed)
         } else {
             return "Invalid planet!"
@@ -217,16 +185,9 @@
     
     calculateYearsUntil(planet) {
         let yearsUntil;
-        const planetYears = {
-            Mercury: 0.24,
-            Venus: 0.62,
-            Mars: 1.88,
-            Jupiter: 11.86,
-        };
-&nbsp;
-        if (planetYears.hasOwnProperty(planet)) {
+        if (this.planetYears.hasOwnProperty(planet)) {
             let ageDiff = this.futureAge - this.earthAge;
-            yearsUntil = (ageDiff / planetYears[planet]).toFixed(2);
+            yearsUntil = (ageDiff / this.planetYears[planet]).toFixed(2);
             return parseFloat(yearsUntil)
         } else {
             return "Invalid planet!"
@@ -240,7 +201,7 @@
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Jun 23 2023 13:41:48 GMT-0700 (Pacific Daylight Time)
+                at Fri Jun 23 2023 13:45:54 GMT-0700 (Pacific Daylight Time)
             </div>
         </div>
         <script src="prettify.js"></script>
