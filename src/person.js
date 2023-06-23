@@ -49,7 +49,9 @@ export class Person {
         } else if (planet === "Mars") {
             yearsUntil = ((this.futureAge - this.earthAge) / 1.88).toFixed(2);
             return parseFloat(yearsUntil)
-        
+        } else if (planet === "Jupiter") {
+            yearsUntil = ((this.futureAge - this.earthAge) / 11.86).toFixed(2);
+            return parseFloat(yearsUntil)
         }
     }
 
