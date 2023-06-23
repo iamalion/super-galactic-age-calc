@@ -8,6 +8,9 @@ export class Person {
         if (planet === "Mercury"){
             planetAge = this.earthAge * 0.24;
             return planetAge;
+        } else if (planet === "Venus") {
+            planetAge = this.earthAge * 0.62;
+            return planetAge;
         } else {
             return "Invalid planet!"
         }
