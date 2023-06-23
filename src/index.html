@@ -9,7 +9,9 @@
 <body>
     <div id="header">
         <h1>How old are you on other planets?</h1>
-        <p>Did you know that if you were born and lived on a different planet you'd have a different age? Yeah, yeah I know you can't actually be born and live on different planets but stick with me here. A year is defined as the orbital period of a planetary body. Basically, how long does it take a planet to make one complete orbit around the Sun.</p>
+        <p>Did you know that if you were born and lived on a different planet you'd have a different age? Yeah, yeah I know you can't actually be born and live on different planets but stick with me here. A year is defined as the orbital period of a planetary body. Basically, how long it takes a planet to make one complete orbit around the Sun.</p>
+    </div>
+    <div id="info">
         <p>The planets have the following year lengths in comparison to the Earth:</p>
         <ul>
             <li>Mercury: 0.24 Earth years</li>
@@ -21,6 +23,38 @@
             <li>Neptune: 164.8 Earth years </li>
         </ul>
     </div>
+    <div id="friendly">
+        <p>Let's find out what your age would be on other planets!</p>
+    </div>
+    <div id="form-div">
+        <form id="form-id">
+            <div class="form-group">
+                <p>What's your name?</p>
+                <input type="text" name="name" id="nameID" class="form-control" placeholder="Xerxes Xavier Xander III" required/>
+            </div>
+            <div class="form-group">
+                <p>And how old are you in Earth years?</p>
+                <input type="number" min="0" max="120" id="numberID" class="form-control" required/>
+            <div class ="form-group">
+                <p>Now, pick a planet!</p>
+                <input type="radio" name="planetList" value="mercuryVal" id="mercuryID" checked>
+                <label for="mercuryID">Mercury</label><br />
+                <input type="radio" name="planetList" value="venusVal" id="venusID">
+                <label for="venusID">Venus</label><br />
+                <input type="radio" name="planetList" value="marsVal" id="marsID">
+                <label for="marsID">Mars</label><br />
+                <input type="radio" name="planetList" value="jupiterVal" id="jupiterID">
+                <label for="jupiterID">Jupiter</label><br />
+                <input type="radio" name="planetList" value="uranusVal" id="uranusID">
+                <label for="uranusID">Uranus</label><br />
+                <input type="radio" name="planetList" value="neptuneVal" id="neptuneID">
+                <label for="neptuneID">Neptune</label><br />
+            </div>    
+            <button type="submit" id="buttonID">Zeep-zorp my age!</button>
+        </form>
+    </div>
+
+
     
 </body>
 </html>
