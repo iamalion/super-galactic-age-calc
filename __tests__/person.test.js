@@ -38,5 +38,9 @@ describe('Person  ', () => {
 
     test ('should determine how many years have passed on each planet since a past birthday', () => {
         expect(person.calculateYearsPassed("Venus")).toEqual(3.72)
+    });
+
+    test ('should determine how many years have passed on each planet since a past birthday', () => {
+        expect(person.calculateYearsPassed("Mars")).toEqual(11.28)
     });    
 })
