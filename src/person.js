@@ -46,10 +46,12 @@ export class Person {
         } else if (planet === "Venus") {
             yearsUntil = ((this.futureAge - this.earthAge) / 0.62).toFixed(2);
             return parseFloat(yearsUntil)
-        }
+        } else if (planet === "Mars") {
+            yearsUntil = ((this.futureAge - this.earthAge) / 1.88).toFixed(2);
+            return parseFloat(yearsUntil)
         
+        }
     }
-}
 
     
-
+}
