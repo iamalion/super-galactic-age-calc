@@ -34,8 +34,16 @@
             </div>
             <div class="form-group">
                 <p>And how old are you in Earth years?</p>
-                <input type="number" min="0" max="120" id="numberID" class="form-control" required/>
+                <input type="number" min="0" max="120" id="ageID" class="form-control" required/>
+            </div>
+            <div class="form-group">
+                <p>Just for fun, how old were you when you lost your first tooth?</p>
+                <input type="number" min="0" max="120" id="pastAgeID" class="form-control" required/>
+            </div>
             <div class ="form-group">
+                <p>And which age are you most looking forward to?</p>
+                <input type="number" min="0" max="120" id="futureAgeID" class="form-control" required/>
+            </div>
                 <p>Now, pick a planet!</p>
                 <input type="radio" name="planetList" value="mercuryVal" id="mercuryID" checked>
                 <label for="mercuryID">Mercury</label><br />
@@ -52,9 +60,16 @@
             </div>    
             <button type="submit" id="buttonID">Zeep-zorp my age!</button>
         </form>
-    </div>
-
-
+    </div>  
+    <div id="result" class="hidden">
+        <div id="centerResults">
+        <!-- <img src="" alt=""> -->
+        <div class="">
+            <h2 id="greetingID" class="resultStyle"></h2>
+            <p id="output"class=resultStyle></p>
+        </div>
     
+        <button id="clearForm" class="float">Try a different planet!</button>
+    </div> 
 </body>
 </html>
