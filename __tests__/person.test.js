@@ -20,4 +20,8 @@ describe('Person  ', () => {
         expect(person.calculateAge("Pluto")).toBe("Invalid planet!");
 
     })
+
+    test('should calculate the age of the person in Mercury, Venus, Mars, and Jupiter years', () => {
+        expect(person.calculateAge("Venus")).toEqual(22.32)
+    })
 })
