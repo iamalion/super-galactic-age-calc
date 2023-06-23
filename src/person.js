@@ -28,6 +28,9 @@ export class Person {
         } else if (planet === "Venus") {
             yearsPassed = ((this.earthAge - this.pastAge) * 0.62).toFixed(2);
             return parseFloat(yearsPassed);
+        } else if (planet === "Mars") {
+            yearsPassed = ((this.earthAge - this.pastAge) * 1.88).toFixed(2);
+            return parseFloat(yearsPassed);
         
         } else {
             return "Invalid planet!"
