@@ -14,7 +14,11 @@ export class Person {
         } else if (planet === "Mars"){
             planetAge = (this.earthAge * 1.88).toFixed(2);
             return parseFloat(planetAge);
-        } else {
+        } else if (planet === "Jupiter"){
+            planetAge = this.earthAge * 11.86;
+            return planetAge;
+        }
+        else {
             return "Invalid planet!"
         }
 
