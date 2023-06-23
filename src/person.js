@@ -1,8 +1,9 @@
 export class Person {
-    constructor(firstName, earthAge, pastAge){
+    constructor(firstName, earthAge, pastAge, futureAge){
         this.firstName = firstName;
         this.earthAge = earthAge;
         this.pastAge = pastAge;
+        this.futureAge = futureAge;
     }
     calculateAge(planet){
         let planetAge;
@@ -36,7 +37,10 @@ export class Person {
         return parseFloat(yearsPassed)
           
     }
-        
+    
+    calculateYearsUntil(planet) {
+        let yearsUntil;
+    }
 }
 
     
