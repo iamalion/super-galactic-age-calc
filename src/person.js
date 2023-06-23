@@ -9,15 +9,15 @@ export class Person {
             Venus: 0.62,
             Mars: 1.88,
             Jupiter: 11.86
-        }
+        };
     }
     calculateAge(planet){
         let planetAge;
         if (this.planetYears.hasOwnProperty(planet)){
             planetAge = (this.earthAge / this.planetYears[planet]).toFixed(2);
-            return parseFloat(planetAge)
+            return parseFloat(planetAge);
         } else {
-            return "Invalid planet!"
+            return "Invalid planet!";
         }
         
     }
@@ -27,9 +27,9 @@ export class Person {
         if (this.planetYears.hasOwnProperty(planet)) {
             let ageDiff = this.earthAge - this.pastAge;
             yearsPassed = (ageDiff / this.planetYears[planet]).toFixed(2);
-            return parseFloat(yearsPassed)
+            return parseFloat(yearsPassed);
         } else {
-            return "Invalid planet!"
+            return "Invalid planet!";
         } 
     }
     
@@ -38,9 +38,9 @@ export class Person {
         if (this.planetYears.hasOwnProperty(planet)) {
             let ageDiff = this.futureAge - this.earthAge;
             yearsUntil = (ageDiff / this.planetYears[planet]).toFixed(2);
-            return parseFloat(yearsUntil)
+            return parseFloat(yearsUntil);
         } else {
-            return "Invalid planet!"
+            return "Invalid planet!";
         }
     }   
 }
