@@ -28,4 +28,8 @@ describe('Person  ', () => {
     test('should calculate the age of the person in Mercury, Venus, Mars, and Jupiter years', () => {
         expect(person.calculateAge("Mars")).toEqual(67.68)
     })
+
+    test('should calculate the age of the person in Mercury, Venus, Mars, and Jupiter years', () => {
+        expect(person.calculateAge("Jupiter")).toEqual(426.96)
+    })
 })
