@@ -32,4 +32,8 @@ describe('Person  ', () => {
     test('should calculate the age of the person in Mercury, Venus, Mars, and Jupiter years', () => {
         expect(person.calculateAge("Jupiter")).toEqual(426.96)
     })
+
+    test ('should determine how many years have passed on each planet since a past birthday', () => {
+        expect(person.calculateYearsPassed("Mercury")).toEqual(1.44)
+    })
 })

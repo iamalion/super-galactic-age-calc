@@ -1,7 +1,8 @@
 export class Person {
-    constructor(firstName, earthAge){
+    constructor(firstName, earthAge, pastAge){
         this.firstName = firstName;
         this.earthAge = earthAge
+        this.pastAge = pastAge
     }
     calculateAge(planet){
         let planetAge;
@@ -17,6 +18,16 @@ export class Person {
             return "Invalid planet!"
         }
         return parseFloat(planetAge)
+    }
+    
+    calculateYearsPassed(planet){
+        let yearsPassed;
+        if (planet === "Mecury"){
+            yearsPassed = ((this.earthAge - this.pastAge)*0.24).toFixed(2)
+            return parseFloat(yearsPassed)
+
+        }
+
     }
 
 }
