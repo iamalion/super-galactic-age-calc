@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1687556220210" clover="3.2.0">
-  <project timestamp="1687556220210" name="All files">
+<coverage generated="1687556316527" clover="3.2.0">
+  <project timestamp="1687556316527" name="All files">
     <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4" elements="29" coveredelements="29" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
     <file name="person.js" path="/Users/lindsay/Desktop/epicodus/super-galactic-age-calc/src/person.js">
       <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
-      <line num="3" count="18" type="stmt"/>
-      <line num="4" count="18" type="stmt"/>
-      <line num="5" count="18" type="stmt"/>
-      <line num="6" count="18" type="stmt"/>
-      <line num="7" count="18" type="stmt"/>
-      <line num="18" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="3" count="19" type="stmt"/>
+      <line num="4" count="19" type="stmt"/>
+      <line num="5" count="19" type="stmt"/>
+      <line num="6" count="19" type="stmt"/>
+      <line num="7" count="19" type="stmt"/>
+      <line num="18" count="8" type="cond" truecount="2" falsecount="0"/>
       <line num="19" count="6" type="stmt"/>
       <line num="20" count="6" type="stmt"/>
-      <line num="22" count="1" type="stmt"/>
+      <line num="22" count="2" type="stmt"/>
       <line num="29" count="5" type="cond" truecount="2" falsecount="0"/>
       <line num="30" count="4" type="stmt"/>
       <line num="31" count="4" type="stmt"/>
