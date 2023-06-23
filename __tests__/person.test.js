@@ -53,7 +53,7 @@ describe('Person  ', () => {
     });
 
     test ('should determine how many years have yet to pass until a future birthday', () => {
-        expect(person.calculateYearsUntil("Mecury")).toEqual(58.33);
+        expect(person.calculateYearsUntil("Mercury")).toEqual(58.33);
     });
 
     
