@@ -72,6 +72,16 @@ describe('Person  ', () => {
         expect(person.calculateYearsUntil("Pluto")).toBe("Invalid planet!");
     });
 
+    //add Saturn, Uranus & Neptune
+
+    test('should calculate the age of the person in Mercury, Venus, Mars, and Jupiter years', () => {
+        expect(person.calculateAge("Saturn")).toEqual(1.22);
+    });
+
+    test('should calculate the age of the person in Mercury, Venus, Mars, and Jupiter years', () => {
+        expect(person.calculateAge("Uranus")).toEqual(0.42);
+    });
+
     
 
     
