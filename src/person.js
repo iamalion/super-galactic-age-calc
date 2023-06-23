@@ -13,7 +13,7 @@ export class Person {
     }
     calculateAge(planet){
         let planetAge;
-        if (this.planetYears.hasOwnProperty(planet)){
+        if (Object.prototype.hasOwnProperty.call(this.planetYears, planet)){
             planetAge = (this.earthAge / this.planetYears[planet]).toFixed(2);
             return parseFloat(planetAge);
         } else {
@@ -24,7 +24,7 @@ export class Person {
     
     calculateYearsPassed(planet) {
         let yearsPassed;
-        if (this.planetYears.hasOwnProperty(planet)) {
+        if (Object.prototype.hasOwnProperty.call(this.planetYears, planet)) {
             let ageDiff = this.earthAge - this.pastAge;
             yearsPassed = (ageDiff / this.planetYears[planet]).toFixed(2);
             return parseFloat(yearsPassed);
@@ -35,7 +35,7 @@ export class Person {
     
     calculateYearsUntil(planet) {
         let yearsUntil;
-        if (this.planetYears.hasOwnProperty(planet)) {
+        if (Object.prototype.hasOwnProperty.call(this.planetYears, planet)) {
             let ageDiff = this.futureAge - this.earthAge;
             yearsUntil = (ageDiff / this.planetYears[planet]).toFixed(2);
             return parseFloat(yearsUntil);
