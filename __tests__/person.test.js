@@ -79,7 +79,7 @@ describe('Person  ', () => {
     });
 
     test('should calculate the age of the person in Mercury, Venus, Mars, and Jupiter years', () => {
-        expect(person.calculateAge("Uranus")).toEqual(0.42);
+        expect(person.calculateAge("Uranus")).toEqual(0.43);
     });
 
     
