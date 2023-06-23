@@ -52,6 +52,8 @@ export class Person {
         } else if (planet === "Jupiter") {
             yearsUntil = ((this.futureAge - this.earthAge) / 11.86).toFixed(2);
             return parseFloat(yearsUntil)
+        } else {
+            return "Invalid planet!"
         }
     }
 
