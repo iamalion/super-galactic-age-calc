@@ -1,10 +1,13 @@
 export class Person {
-    constructor(firstName, earthAge){
+    constructor(firstName){
         this.firstName = firstName;
-        this.earthAge = earthAge;
     }
+//     calculateAge(age, planet){
+//         let planetAge;
+//         if (planet === "Mercury"){
+//             return planetAge * .24
+//         }
 
-    calculateAge(){
-        
-    }
+//     }
+// 
 }
