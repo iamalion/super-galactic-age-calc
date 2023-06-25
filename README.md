@@ -26,7 +26,12 @@ This project was for week 5 at Epicodus to demonstrate proficiency in TDD and En
 
 ## Known Bugs
 
-* UI Logic does not yet work
+* None
+
+## Upcoming changes
+
+* Add UI Logic
+* Add CSS Styling
 
 ## License
 MIT License
