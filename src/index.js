@@ -1,3 +1,4 @@
+
 import Person from './person';
 document.getElementById("form-id").addEventListener("submit", handleForm);
 
